@@ -17,6 +17,7 @@ describe AWeber::Resources::Subscriber do
   it { should respond_to :resource_type_link }
   it { should respond_to :self_link }
   it { should respond_to :status }
+  it { should respond_to :tags }
   it { should respond_to :subscribed_at }
   it { should respond_to :subscription_method }
   it { should respond_to :subscription_url }
@@ -29,6 +30,7 @@ describe AWeber::Resources::Subscriber do
   its(:writable_attrs) { should include :misc_notes }
   its(:writable_attrs) { should include :email }
   its(:writable_attrs) { should include :status }
+  its(:writable_attrs) { should include :tags }
   its(:writable_attrs) { should include :custom_fields }
   its(:writable_attrs) { should include :ad_tracking }
   its(:writable_attrs) { should include :last_followup_message_number_sent }
